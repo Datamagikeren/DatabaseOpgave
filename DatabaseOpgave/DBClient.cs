@@ -149,12 +149,13 @@ namespace DatabaseOpgave
             //    Console.WriteLine("Error");
             //}
         }
-        public static void GetHotelWithFacility()
+        public static void GetHotelWithFacility(int hotelNo)
         {
             string connectionString = @"Data Source=(localdb)\MSSQLLocalDB;Initial Catalog=DatabaseOpgaveHotel;Integrated Security=True;Connect Timeout=30;Encrypt=False;TrustServerCertificate=False;ApplicationIntent=ReadWrite;MultiSubnetFailover=False";
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
-                string queryString = "select * from Facility Left join Facility_Hotel ON Facility_Hotel.Fac_No = Facility.Fac_No where (Facility_Hotel.Hotel_No=5);";
+                
+                string queryString = $"select * from Facility Left join Facility_Hotel ON Facility_Hotel.Fac_No = Facility.Fac_No where (Facility_Hotel.Hotel_No={hotelNo});";
                 SqlCommand command = new SqlCommand(queryString, connection);
                 command.Connection.Open();
                 SqlDataReader reader = command.ExecuteReader();
