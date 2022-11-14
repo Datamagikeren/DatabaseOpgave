@@ -8,7 +8,11 @@ namespace DatabaseOpgave
 {
     public class ColorPalette
     {
-        public void Color(ConsoleColor color)
+       /// <summary>
+       /// Ændrer farven på alt Console text. Husk at reset
+       /// </summary>
+       /// <param name="color">Hvilken farve skriften bliver</param>
+       public void Color(ConsoleColor color)
         {
             Console.ForegroundColor = color;
         }
