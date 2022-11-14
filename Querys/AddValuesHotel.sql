@@ -1,0 +1,7 @@
+﻿INSERT INTO [dbo].[Hotel] ([Hotel_No], [Name], [Address]) VALUES (1, N'The Pope', N'Vaticanstreet 1 1111 Bishopcity')
+INSERT INTO [dbo].[Hotel] ([Hotel_No], [Name], [Address]) VALUES (2, N'Lucky Star', N'Lucky Road 12 2222 Hometown')
+INSERT INTO [dbo].[Hotel] ([Hotel_No], [Name], [Address]) VALUES (3, N'Discount', N'Inexpensive Road 7 3333 Cheaptown')
+INSERT INTO [dbo].[Hotel] ([Hotel_No], [Name], [Address]) VALUES (4, N'deLuxeCapital', N'Luxury Road 99 4444 Luxus')
+INSERT INTO [dbo].[Hotel] ([Hotel_No], [Name], [Address]) VALUES (5, N'Discount', N'Inexpensive Street 12 6666 Pricetown')
+INSERT INTO [dbo].[Hotel] ([Hotel_No], [Name], [Address]) VALUES (6, N'Prindsen', N'Algade 5, 4000 Roskilde')
+INSERT INTO [dbo].[Hotel] ([Hotel_No], [Name], [Address]) VALUES (7, N'Scandic', N'Sdr. Ringvej 5, 4000 Roskilde')

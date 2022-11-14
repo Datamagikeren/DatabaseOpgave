@@ -15,11 +15,11 @@ ColorPalette cp = new ColorPalette();
 
 DBClient.UpdateFacility("ComputerWroom", "HY", 5);
 cp.Color(ConsoleColor.Green);
-Console.WriteLine("Kalder på 'GetFacility' metoden for at se faciliteter i databasen:");
+Console.WriteLine("Kalder 'GetFacility' metoden for at se faciliteter i databasen:");
 Console.ResetColor();
 DBClient.GetFacility();
 cp.Color(ConsoleColor.Green);
-Console.WriteLine("Tilføjer en 'Trampolinpark' til 'Facility' table");
+Console.WriteLine("Kalder metoden 'AddFacility' og tilføjer en 'Trampolinpark' til 'Facility' table");
 Console.ResetColor();
 DBClient.AddFacility(6, "Trampolinpark", "SP");
 DBClient.GetFacility();
